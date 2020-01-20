@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoContent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <EditText
+        android:id="@+id/Titletodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="ENTER TOPIC"
+        android:inputType="text"
+        android:textStyle="bold"
+        android:fontFamily="@font/funny"
+        android:textColor="@color/blue"/>
+    <EditText
+        android:id="@+id/Contenttodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Descriptions"
+        android:inputType="textImeMultiLine"
+        android:fontFamily="@font/daz"
+        android:layout_below="@id/Titletodo"
+        android:textColor="@color/blue"
+
+        />
+        <Button
+            android:id="@+id/subbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Contenttodo"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border2"
+            android:text="SUBMIT"
+            android:textColor="@color/red"
+            android:fontFamily="@font/funny"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+</RelativeLayout>
+</LinearLayout>
